@@ -20,7 +20,7 @@
     border-radius: 50%;
 }
 
-h2 {
+.name {
     text-transform: capitalize;
 }
 
@@ -28,6 +28,7 @@ h2 {
     padding: 5px;
     margin: 5px;
     display: inline-block;
+    max-width: 300px;
 }
 
 .email {
@@ -44,4 +45,5 @@ h2 {
 .address {
     margin-top: 5px;
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
