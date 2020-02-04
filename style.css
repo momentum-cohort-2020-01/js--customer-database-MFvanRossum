@@ -3,3 +3,42 @@
     margin: 0;
     padding: 0;
 }
+
+.header {
+    font-family: sans-serif;
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: flex-wrap;
+    font-family: sans-serif;
+}
+
+.pic {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer {
+    padding: 5px;
+    margin: 5px;
+}
+
+.email {
+    font-size: 15px;
+    color: rgb(124,	124, 124);
+    margin-top: 3px;
+    margin-bottom: 3px;	
+}
+
+.info {
+    font-size: 17px;
+}
+
+.address {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
