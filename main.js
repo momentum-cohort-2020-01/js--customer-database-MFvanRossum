@@ -27,6 +27,16 @@ function createNewProfile (customer) {
     address.classList.add('address')
     profile.appendChild(address)
 
+    const dob = document.createElement('div')
+    dob.innerText = ('DOB: ' 
+                    + moment(customer.dob).format('MMM D, YYYY'))
+    profile.appendChild(dob)
+
+    const registered = document.createElement('div')
+    registered.innerText = ('Customer since: ' 
+                            + moment(customer.registered).format('MMM D, YYYY'))
+    profile.appendChild(registered)
+
     return profile
 }
 
