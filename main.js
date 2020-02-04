@@ -25,16 +25,19 @@ function createNewProfile (customer) {
                         + nameToAbbr(customer.location.state) + ', '
                         + customer.location.postcode)
     address.classList.add('address')
+    address.classList.add('info')
     profile.appendChild(address)
 
     const dob = document.createElement('div')
     dob.innerText = ('DOB: ' 
                     + moment(customer.dob).format('MMM D, YYYY'))
+    dob.classList.add('info')
     profile.appendChild(dob)
 
     const registered = document.createElement('div')
     registered.innerText = ('Customer since: ' 
                             + moment(customer.registered).format('MMM D, YYYY'))
+    registered.classList.add('info')
     profile.appendChild(registered)
 
     return profile
